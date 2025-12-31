@@ -5,6 +5,14 @@
 参考[dtm安装运行](https://dtm.pub/guide/install.html)
 
 #### 运行示例
+
+准备数据库
+- 安装 [src/main/resources/application.yml]() 中的spring/datasource准备数据库实例
+- 创建库表
+  - 库 `create schema dtm_busi collate utf8mb3_bin;`
+  - 屏障表 `sql/barrier.sql`
+  - TCC业务表 `sql/busi.mysql.sql`
+
 运行服务
 
 ```
